@@ -4,11 +4,12 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { PagesComponent } from './pages.component';
 
 
+
 @NgModule({
   declarations: [PagesComponent],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
   ]
 })
 export class PagesModule { }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GalleryService } from '../../gallery.service';
 
 @Component({
   selector: 'app-models3d',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Models3dComponent implements OnInit {
 
-  constructor() { }
+  galleryOptions: any;
+  galleryImages: any;
+
+  constructor(private service: GalleryService) { }
 
   ngOnInit() {
+    this.galleryOptions = this.service.defineGalleryOptions();
+    this.galleryImages = this.service.defineGalleryImages();
   }
 
 }

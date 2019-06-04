@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgxGalleryModule } from 'ngx-gallery';
 
 @NgModule({
   declarations: [
@@ -12,7 +11,6 @@ import { NgxGalleryModule } from 'ngx-gallery';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxGalleryModule,
     AngularFontAwesomeModule,
   ],
   providers: [],
