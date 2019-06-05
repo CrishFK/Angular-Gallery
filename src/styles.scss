@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+html, body{ height:100%; margin:0; }
+
+body {
+  font-family: lobster !important;
+  background: url('assets/backgroundBody.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display:flex; 
+  flex-direction:column; 
+}
+
+footer{
+  display: table;
+  text-align: center; 
+  background: black;
+  color:#fff;
+  margin-top:auto;
+}
+
+
+
