@@ -1,5 +1,20 @@
-<p>
-  pages works!
-</p>
+<div id="rc_logo">
+  <a href="#home" title="Logo">LOGO</a> <!-- Swap this placeholder out for your logo image -->
+</div>
 
-<router-outlet></router-outlet>
+<div class="rc_nav" id="centered_nav">
+  <a routerLink="/pages/main" routerLinkActive="active">Home</a>
+  <a routerLink="/pages/illustrations" routerLinkActive="active">Illustrations</a>
+  <a routerLink="/pages/animations" routerLinkActive="active">Animations</a>
+  <a routerLink="/pages/models3d" routerLinkActive="active">3DModels</a>
+  <a routerLink="/pages/aboutme" routerLinkActive="active">AboutMe</a>
+  <a routerLink="/pages/contact" routerLinkActive="active">Contact</a>
+  <a class="icon" (click)="navBarResponsive()"> <i class="fa fa-bars"></i></a>
+</div>
+
+<!-- Page Content -->
+<section class="py-5">
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</section>
