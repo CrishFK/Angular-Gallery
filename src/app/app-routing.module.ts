@@ -10,7 +10,6 @@ const routes: Routes = [
   { path: '', redirectTo: 'pages/main', pathMatch: 'full' },
   { path: '**', redirectTo: 'pages/main' },
   { path: 'pages', redirectTo: 'pages/main' },
-  { path: '404', redirectTo: 'pages/main' }
 ];
 
 @NgModule({

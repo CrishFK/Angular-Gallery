@@ -4,7 +4,7 @@ body {
 }
 
 .logoMain {
-  width: 70%;
+  width: 100px;
   height: 38px;
 }
 
@@ -12,9 +12,6 @@ body {
   left: 30px;
   padding: 22px;
   position: absolute;
-  background:url('../../assets/logoMainBar.png')no-repeat center center fixed;
-  font-size: 19px;
-  text-decoration: none;
 }
 
 #rc_logo a {
