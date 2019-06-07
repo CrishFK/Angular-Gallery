@@ -7,18 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagesComponent implements OnInit {
 
+  toggleNavBar = true;
+
   constructor() { }
 
   ngOnInit() {
   }
 
   navBarResponsive(): void {
-    var x = document.getElementById("centered_nav");
-    if (x.className === "rc_nav") {
+    this.toggleNavBar = true;
+    var x = document.getElementById("navBar");
+    if (x.className === "navItems") {
       x.className += " responsive";
+
     } else {
-      x.className = "rc_nav";
+      x.className = "navItems";
     }
+  }
+
+  navBarCollapse(): void {
+    this.toggleNavBar = false;
+    this.navBarResponsive();
   }
 
 }

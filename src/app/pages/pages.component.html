@@ -1,15 +1,20 @@
 <div id="rc_logo">
-  <img class="logoMain" src="assets/logoMainBar.png"> 
+  <img class="logoMain" src="assets/logoMainBar.png">
 </div>
-<div class="rc_nav" id="centered_nav">
-  <a routerLink="/pages/main" routerLinkActive="active">Home</a>
-  <a routerLink="/pages/illustrations" routerLinkActive="active">Illustrations</a>
-  <a routerLink="/pages/animations" routerLinkActive="active">Animations</a>
-  <a routerLink="/pages/models3d" routerLinkActive="active">3DModels</a>
-  <a routerLink="/pages/aboutme" routerLinkActive="active">AboutMe</a>
-  <a routerLink="/pages/contact" routerLinkActive="active">Contact</a>
-  <a class="icon" (click)="navBarResponsive()"> <i class="fa fa-bars"></i></a>
+<div class="navItems" id="navBar">
+  <div *ngIf="toggleNavBar">
+    <a routerLink="/pages/main" routerLinkActive="active" (click)="navBarCollapse()">Home</a>
+    <a routerLink="/pages/illustrations" routerLinkActive="active" (click)="navBarCollapse()">Illustrations</a>
+    <a routerLink="/pages/animations" routerLinkActive="active" (click)="navBarCollapse()">Animations</a>
+    <a routerLink="/pages/models3d" routerLinkActive="active" (click)="navBarCollapse()">3DModels</a>
+    <a routerLink="/pages/aboutme" routerLinkActive="active" (click)="navBarCollapse()">AboutMe</a>
+    <a routerLink="/pages/contact" routerLinkActive="active" (click)="navBarCollapse()">Contact</a>
+  </div>
+  <a class="icon" (click)="navBarResponsive()"><i class="fa fa-bars"></i></a>
 </div>
+
+
+
 <section class="py-5">
   <div class="container">
     <router-outlet></router-outlet>
