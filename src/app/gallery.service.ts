@@ -15,6 +15,14 @@ export class GalleryService {
   defineGalleryOptions(): any {
     this.galleryOptions = [
       {
+        "previewFullscreen": true,
+        "imageArrowsAutoHide": false,
+        "imageAutoPlay": true,
+        imageAutoPlayInterval: 6000,
+        "imageAutoPlayPauseOnHover": true,
+        "imageInfinityMove": true,
+        width: '1000px',
+        height: '700px',
         thumbnailsColumns: 3,
         thumbnailsRows: 3,
         thumbnailsPercent: 40,
@@ -22,18 +30,6 @@ export class GalleryService {
         thumbnailMargin: 2,
         thumbnailsMargin: 2
       },
-      {
-        breakpoint: 800,
-        width: '100%',
-        height: '100%',
-        thumbnailsColumns: 3
-      },
-      {
-        breakpoint: 800,
-        width: '500%',
-        height: '600px',
-        thumbnailsColumns: 2
-      }
     ];
     return this.galleryOptions;
   }
@@ -100,7 +96,7 @@ export class GalleryService {
         medium: 'assets/12.jpg',
         big: 'assets/12.jpg'
       },
-      
+
     ];
     return this.galleryImages;
   }
