@@ -7,13 +7,16 @@ import { GalleryService } from '../../gallery.service';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  galleryOptions: any;
+
+  galleryOptions: Array<any> = [];
+
   galleryImages: any;
-  constructor(private service: GalleryService) { }
+
+  constructor(private gallery: GalleryService) { }
 
   ngOnInit() {
-    this.galleryOptions = this.service.defineGalleryOptions();
-    this.galleryImages = this.service.defineGalleryImages();
+    this.galleryOptions.push(this.gallery.galleryOptions);
+    this.gallery.defineGalleryImages('main.json', 'main/').subscribe((images) => this.galleryImages = images);
   }
 
 }

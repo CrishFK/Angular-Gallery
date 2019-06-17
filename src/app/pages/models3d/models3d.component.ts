@@ -14,8 +14,7 @@ export class Models3dComponent implements OnInit {
   constructor(private service: GalleryService) { }
 
   ngOnInit() {
-    this.galleryOptions = this.service.defineGalleryOptions();
-    this.galleryImages = this.service.defineGalleryImages();
+    
   }
 
 }
