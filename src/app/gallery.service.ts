@@ -35,6 +35,7 @@ export class GalleryService {
   constructor(private http: HttpClient) { }
 
   defineGalleryImages(url: string, directory: string): Observable<any> {
+    this.galleryImages = [];
     this.http.get('../assets/' + url, { responseType: 'text' })
       .subscribe((data => {
         JSON.parse(data).forEach(nameImage => {
