@@ -1,5 +1,6 @@
 .boxContent {
   background: rgba(20, 20, 20, 0.55);
+  border-radius: 50px;
 }
 
 div {
@@ -11,10 +12,12 @@ div {
   height: 100px;
 }
 
-h2{
-    background: rgba(209, 198, 198, 0.39) !important;
+h2 {
+  background: #000000b0 !important;
+  border-radius: 20px !important;
+  padding: 10px;
 }
 
-h4{
-    text-decoration: underline !important;
+h4 {
+  text-decoration: underline !important;
 }

@@ -1,0 +1,45 @@
+.boxContent {
+  background: rgba(20, 20, 20, 0.55);
+  border-radius: 50px;
+}
+
+textarea,
+input {
+  background: #080808d4;
+  border-radius: 40px;
+  color: white;
+}
+
+.sendIt {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  width: 100px;
+  height: 40px;
+}
+
+.systemMessage{
+  color:red;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+}
+
+input {
+  padding: 3px;
+}
+
+textarea {
+  padding: 10px;
+}
+
+.textArea {
+  height: 200px;
+  width: 100%;
+}
+
+div {
+  margin-top: 10px !important;
+}

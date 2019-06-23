@@ -1,1 +1,20 @@
 <h1>Contact</h1>
+
+<div class="row boxContent">
+    <div class="col">
+        <label>Name</label>
+        <input type="text" placeholder="Your name.." [(ngModel)]="name">
+    </div>
+    <div class="col">
+        <label>eMail </label>
+        <input type="text" placeholder="Your email.." [(ngModel)]="email">
+    </div>
+    <div class="col-sm-12">
+        <label>Subject </label>
+        <textarea class="textArea" placeholder="Write something.." [(ngModel)]="message"></textarea>
+        <h3 class="systemMessage" *ngIf="formCorrect">Message sent successfully.</h3>
+        <h3 class="systemMessage" *ngIf="formIncorrect">All fields are required.</h3>
+        <h3 class="systemMessage" *ngIf="emailIncorrect">Invalid email format</h3>
+    </div>
+    <input class="sendIt" value="Send It" type="submit" (click)="sendIt()">
+</div>
